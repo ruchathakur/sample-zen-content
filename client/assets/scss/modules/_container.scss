@@ -1,0 +1,32 @@
+/*container*/
+
+@import "typography";
+
+#main-wrapper{
+max-width: 1200px;
+margin: 0 auto;
+border: 1px solid gray;
+@include create-text(#5a5a5a,18px,400,left);
+}
+
+#sidebar,#main{
+border: 1px solid black;
+background-color: #eeeeee;
+.grid-block{
+@include create-text(#5a5a5a,14px,300,left);
+}
+}
+
+#main{
+.grid-block:nth-child(1)>.grid-content:nth-child(1){
+background: #d6d6d6;
+}
+.grid-block .grid-block .grid-block{
+border-top: 1px solid black;
+border-left:0;
+}
+.grid-block .grid-block{
+padding:0;
+vertical-align:bottom;
+}
+}

@@ -1,0 +1,15 @@
+/*typography*/
+
+@mixin create-text($color,$size,$weight,$align) {
+  color: $color !important;
+  font-size: $size !important;
+  font-weight: $weight !important;
+  text-align: $align !important;
+}
+
+.menu-bar > li > a{
+	@include create-text(#5a5a5a,14px,300,center);
+}
+
+
+
