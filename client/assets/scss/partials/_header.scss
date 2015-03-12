@@ -8,6 +8,10 @@
 			color: #000;
 		}
 	}
+	.menu-content {
+		border-bottom: 1px solid #ccc;
+		margin-bottom: 15px;
+	}
 	.menu-bar {
 		margin: 8px 0 15px;
 		>li {
@@ -43,7 +47,7 @@
 	.profile-name {
 		font-size: 0.9375rem;
 		text-align: center;
-		margin-bottom: 10px;
+		margin-bottom: 18px;
 		position: relative;
 	}
 	.arrow-down {
