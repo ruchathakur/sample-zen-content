@@ -1,0 +1,44 @@
+.page-container {
+	h1 {
+		font-size:24px;
+		font-weight: 500;
+		padding: 15px 0 0 15px;
+		margin: 0;
+		a {
+			color: #000;
+		}
+	}
+	.menu-bar {
+		margin: 8px 0 15px;
+		>li {
+			-webkit-flex: 0 0 auto; 
+			-ms-flex: 0 0 auto;
+			flex: 0 0 auto; 
+			border-right: 1px solid #ccc; 
+			&:last-child {
+				border-right: 0;
+			}
+		}
+		a {
+			padding: 2px 15px;
+			&:hover {
+				background:none;
+			}
+		}
+	}
+	.profile-menu-wrap {
+		padding: 15px 0 0;
+		.menu-bar {
+			>li {
+				-webkit-flex: 1 0 auto; 
+				-ms-flex: 1 0 auto;
+				flex: 1 0 auto;
+				border: 0;
+			}
+		}
+	}
+	.profile-name {
+		text-align: center;
+		margin-bottom: 10px;
+	}
+}
