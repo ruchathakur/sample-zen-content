@@ -25,28 +25,40 @@
 
       <div class="grid-content collapse small-12 medium-3 profile-menu-wrap">
         <div class="profile-name">
-          <a href="">Test User <span></span></a>
+          <a href="">Test User <span class="arrow-down"></span></a>
         </div>
         <ul class="menu-bar">
-          <li ui-sref-active="is-active" class="is-active"><a ui-sref="listings" href="#!/">Listings</a></li>
-          <li ui-sref-active="is-active" class=""><a ui-sref="photos" href="#!/photos">Photos</a></li>
-          <li ui-sref-active="is-active" class=""><a ui-sref="reviews" href="#!/reviews">Reviews</a></li>
+          <li><a href="#!/">Listings</a></li>
+          <li><a href="#!/photos">Photos</a></li>
+          <li><a href="#!/reviews">Reviews</a></li>
         </ul>
       </div>
     </div>
     
-    <div class="grid-frame">
-      <div class="large-6 columns">
-        <div class="row collapse prefix-round">
-          <div class="small-3 columns">
-            <a href="#" class="button prefix">Go</a>
+    <form>
+      <div class="row">
+        <div class="large-6 columns">
+          <div class="row collapse prefix-round">
+            <div class="small-3 columns">
+              <a href="#" class="button prefix">Go</a>
+            </div>
+            <div class="small-9 columns">
+              <input type="text" placeholder="Value">
+            </div>
           </div>
-          <div class="small-9 columns">
-            <input type="text" placeholder="Value">
+        </div>
+        <div class="large-6 columns">
+          <div class="row collapse postfix-round">
+            <div class="small-9 columns">
+              <input type="text" placeholder="Value">
+            </div>
+            <div class="small-3 columns">
+              <a href="#" class="button postfix">Go</a>
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    </form>
 
     <div class="grid-frame vertical">
       <div class="title-bar">
