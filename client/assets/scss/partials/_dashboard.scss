@@ -23,7 +23,7 @@ margin:0 10px;
 .grid-content{
 padding:0;
 >p{
-	padding: 0 10px;
+padding: 0 10px;
 }
 }
 }
@@ -37,5 +37,24 @@ border-top: 1px solid black;
 border-bottom: 1px solid black;
 background: #b8afa6;
 }
+.menu-bar > li{
+> a{
+font-size: 12px !important;
+color:blue !important;
+}
+a.active{
+color: #5a5a5a !important;
+font-weight:bold !important;
+}
+} 
+
+.menu-bar a {
+padding: 2px 10px !important;
+}
+.view{
+	color: blue !important;
+	font-size: 12px  !important;
+	cursor: pointer;
+	}
 
 }
