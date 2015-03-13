@@ -9,10 +9,6 @@
 				color: #000;
 			}
 		}
-		.menu-content {
-			border-bottom: 1px solid #ccc;
-			margin-bottom: 15px;
-		}
 		.menu-bar {
 			margin: 8px 0 15px;
 			>li {
@@ -31,9 +27,32 @@
 				}
 			}
 		}
+		.menu-group-right {
+			.menu-bar {
+				>li {
+					border: none;
+				}
+			}
+		}
 		.search-box {
 			border-top: 1px solid #ccc;
 			padding-top: 15px;
+			.button {
+				border-bottom-left-radius: 100px;
+				border-top-left-radius: 100px;
+				background: none;
+				border: 1px solid #ccc;
+				border-right: 0;
+			}
+			input[type="search"] {
+				border-left: 0;
+				border-bottom-right-radius: 100px;
+				border-top-right-radius: 100px;
+				font-size: 0.6875rem;
+				&:hover, &:focus {
+					border-color: #ccc;
+				}
+			}
 		}
 		.profile-name {
 			font-size: 0.9375rem;
