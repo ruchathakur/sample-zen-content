@@ -34,6 +34,25 @@
 				}
 			}
 		}
+		.action-sheet-container {
+			.button {
+				background: none;
+				color: #000;
+				&:hover, &:active {
+					background: none;
+				}
+			}
+		}
+		.action-sheet {
+			width: 150px;
+			li {
+				text-align: left;
+				font-size: 0.75rem;
+				a {
+					padding: 0.6rem;
+				}
+			}
+		}
 		.search-box {
 			border-top: 1px solid #ccc;
 			padding-top: 15px;
