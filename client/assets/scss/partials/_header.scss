@@ -1,45 +1,55 @@
 .page-container {
-	h1 {
-		font-size:24px;
-		font-weight: 500;
-		padding: 15px 0 0 15px;
-		margin: 0;
-		a {
-			color: #000;
-		}
-	}
-	.menu-bar {
-		margin: 8px 0 15px;
-		>li {
-			-webkit-flex: 0 0 auto; 
-			-ms-flex: 0 0 auto;
-			flex: 0 0 auto; 
-			border-right: 1px solid #ccc; 
-			&:last-child {
-				border-right: 0;
+	.header-content {
+		h1 {
+			font-size:1.143rem;
+			font-weight: 500;
+			padding: 15px 0 0 15px;
+			margin: 0;
+			a {
+				color: #000;
 			}
 		}
-		a {
-			padding: 2px 15px;
-			&:hover {
-				background:none;
-			}
+		.menu-content {
+			border-bottom: 1px solid #ccc;
+			margin-bottom: 15px;
 		}
-	}
-	.profile-menu-wrap {
-		padding: 15px 0 0;
 		.menu-bar {
+			margin: 8px 0 15px;
 			>li {
-				-webkit-flex: 1 0 auto; 
-				-ms-flex: 1 0 auto;
-				flex: 1 0 auto;
-				border: 0;
+				-webkit-flex: 0 0 auto; 
+				-ms-flex: 0 0 auto;
+				flex: 0 0 auto; 
+				border-right: 1px solid #ccc; 
+				&:last-child {
+					border-right: 0;
+				}
+			}
+			a {
+				padding: 2px 15px;
+				&:hover {
+					background:none;
+				}
 			}
 		}
+		.search-box {
+			border-top: 1px solid #ccc;
+			padding-top: 15px;
+		}
+		.profile-name {
+			font-size: 0.9375rem;
+			text-align: center;
+			margin-bottom: 18px;
+			position: relative;
+		}
+		.arrow-down {
+			width: 0; 
+			height: 0; 
+			border-left: 4px solid transparent;
+			border-right: 4px solid transparent;		
+			border-top: 4px solid #000;
+			position: absolute;
+			top: 6px;
+			margin-left: 8px;
+		}
 	}
-	.profile-name {
-		text-align: center;
-		margin-bottom: 10px;
-	}
-	
 }
