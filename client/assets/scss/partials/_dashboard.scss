@@ -1,96 +1,95 @@
 #dashboard-container{
-border-top: 1px solid black;
-border-bottom: 1px solid black;
-padding-bottom: 10px;
-background: #FEE8D6;
 
->.grid-block{
-background: white;
-border: 1px solid black;
-border-top:0;
-.grid-block{
-padding: 0 10px;
-.grid-content{
-padding:15px 15px 0 15px;
-}
-}
-}
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+	padding-bottom: 10px;
+	background: #FEE8D6;
 
->.grid-block:first-child,.th{
-border-left:0;
-}
+	>.grid-block{
+		background: white;
+		border: 1px solid black;
+		border-top:0;
+		.grid-block{
+			padding: 0 10px;
+			.grid-content{
+				padding:15px 15px 0 15px;
+			}
+		}
+	}
 
->.grid-block:last-child,.th{
-border-right:0;
-}
-.th{
-text-transform: uppercase;
-border-top: 1px solid black;
-border-bottom: 1px solid black;
-background: #CDB79E !important;
-padding: 0 10px;
+	>.grid-block:first-child,.th{
+		border-left:0;
+	}
 
-.grid-content{
-padding:0 !important;
-}
-p{
-margin:0;
-font-size:12px;
-}
-}
+	>.grid-block:last-child,.th{
+		border-right:0;
+	}
+	.th{
+		text-transform: uppercase;
+		border-top: 1px solid black;
+		border-bottom: 1px solid black;
+		background: #CDB79E !important;
+		padding: 0 10px;
 
-.mid-col{
-margin:0 10px;
-}
+		.grid-content{
+			padding:0 !important;
+		}
+		p{
+			margin:0;
+			font-size:12px;
+		}
+	}
 
->.grid-block .th-border-removed{
-border-top: 0;
-}
+	.mid-col{
+		margin:0 10px;
+	}
 
-.terms{
-font-size: 12px;
+	>.grid-block .th-border-removed{
+		border-top: 0;
+	}
 
-span{
-color:#6495ED;
-cursor:pointer;
-}
+	.terms{
+		font-size: 12px;
 
-span:nth-child(2){
-border-right:2px solid #ccc;
-border-left:2px solid #ccc;
-padding: 0 10px;
-margin: 0 5px;
-}
+		span{
+			color:#6495ED;
+			cursor:pointer;
+		}
 
-span.active{
-color:black;
-}
-}
+		span:nth-child(2){
+			border-right:2px solid #ccc;
+			border-left:2px solid #ccc;
+			padding: 0 10px;
+			margin: 0 5px;
+		}
 
-.count span:nth-child(2){
-float: right;
-}
+		span.active{
+			color:black;
+		}
+	}
 
+	.count span:nth-child(2){
+		float: right;
+	}
 
+	.view{
+		color: #6495ED !important;
+		font-size: 12px  !important;
+		cursor: pointer;
+	}
 
-.view{
-color: #6495ED !important;
-font-size: 12px  !important;
-cursor: pointer;
-}
-
-.earnings{
-font-size: 23px;
-font-weight: bold;
-}
-.earningspertask{
-font-size: 16px;
-font-weight: bold;
-line-height: 1.2;
-}
-.pertask{
-font-weight: normal;
-font-size: 12px;
-}
+	.earnings{
+		font-size: 23px;
+		font-weight: bold;
+	}
+	.earningspertask{
+		font-size: 16px;
+		font-weight: bold;
+		line-height: 1.2;
+	}
+	.pertask{
+		font-weight: normal;
+		font-size: 12px;
+	}
 
 }
