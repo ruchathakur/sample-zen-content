@@ -1,19 +1,22 @@
 #dashboard-container{
 
-	border-top: 1px solid black;
-	border-bottom: 1px solid black;
+	border-top: 1px solid gray;
+	border-bottom: 1px solid gray;
 	padding-bottom: 10px;
 	background: #FEE8D6;
 
 	>.grid-block{
 		background: white;
-		border: 1px solid black;
+		border: 1px solid gray;
 		border-top:0;
 		.grid-block{
 			padding: 0 10px;
 			.grid-content{
 				padding:15px 15px 0 15px;
 			}
+		}
+		p{
+			font-size:12px;
 		}
 	}
 
@@ -26,10 +29,11 @@
 	}
 	.th{
 		text-transform: uppercase;
-		border-top: 1px solid black;
-		border-bottom: 1px solid black;
+		border-top: 1px solid gray;
+		border-bottom: 1px solid gray;
 		background: #CDB79E !important;
 		padding: 0 10px;
+		color: #5a5a5a;
 
 		.grid-content{
 			padding:0 !important;
@@ -86,6 +90,7 @@
 		font-size: 16px;
 		font-weight: bold;
 		line-height: 1.2;
+		text-align:right;
 	}
 	.pertask{
 		font-weight: normal;
