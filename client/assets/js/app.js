@@ -12,6 +12,7 @@
   ])
     .config(config)
     .run(run)
+    .controller('menuGroup', menuGroup);
   ;
 
   config.$inject = ['$urlRouterProvider', '$locationProvider'];
@@ -29,6 +30,47 @@
 
   function run() {
     FastClick.attach(document.body);
+  }
+
+  function menuGroup($scope){
+    $scope.menuGroupLeft = [
+      { 
+        title: 'Dashboard', 
+        href:'#',
+        sub_menu: [
+          { title: 'home', href: '#' }
+        ]
+      },
+      { 
+        title: 'Projects', 
+        href:'#',
+        sub_menu: [
+          { title: 'All projects', href: '#' },
+          { title: 'My projects', href: '#' }
+        ]
+      },
+      { 
+        title: 'Reports', 
+        href:'#',
+        sub_menu: [
+          { title: 'Dashboard', href: '#' }
+        ]
+      },
+      { 
+        title: 'Contacts', 
+        href:'#',
+        sub_menu: [
+          { title: 'Dashboard', href: '#' }
+        ]
+      },
+      { 
+        title: 'Settings',
+        href:'#',
+        sub_menu: [
+          { title: 'Dashboard', href: '#' }
+        ]
+      }
+    ];
   }
 
 })();

@@ -29,14 +29,19 @@
             </div>
           </div>
         </div>
-        <div class="menu-group">
+        <div class="menu-group" ng-controller="menuGroup">
           <div class="menu-group-left">
             <ul class="menu-bar">
-              <li><a href="#">Dashboard</a></li>
-              <li><a href="#">Projects</a></li>
-              <li><a href="#">Reports</a></li>
-              <li><a href="#">Contacts</a></li>
-              <li><a href="#">Settings</a></li>
+              <li zf-action-sheet="" ng-repeat="menu_item in menuGroupLeft">
+                <a zf-as-button="" title="{{ menu_item.title }}" href="{{ menu_item.href }}"></a>
+                <div zf-as-content="" position="bottom">
+                  <ul>
+                    <li ng-repeat="sub_menu in menu_item.sub_menu">
+                      <a href="" title="">{{ sub_menu.title }}</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
             </ul>
           </div>
           <div class="menu-group-right">
