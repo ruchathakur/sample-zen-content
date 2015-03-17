@@ -15,10 +15,35 @@
 	}
 	.right-container{
 		padding: 0;
+			.wrap-setup-form{
+				padding: 15px 0;
+				}
 			.selected-menu-head{
-				.badge{		
-					margin-right: 5px 10px;
+				padding:7px;
+				background: #e5d5bb;
+				text-transform: uppercase;
+				font-weight: bold;
+				font-size: 12px;
+
+			.badge{		
+					margin-right: 10px;
 					}
+				}
+				form{
+
+					label{
+					font-weight: 600;
+					}
+
+					>div{
+					padding: 0;
+					}
+
+				label.head{
+					font-size: 16px;
+					font-weight: 400;
+				}
+				
 				}
 	}
 
