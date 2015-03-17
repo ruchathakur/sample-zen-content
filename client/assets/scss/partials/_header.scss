@@ -53,8 +53,10 @@
 				}
 			}
 		}
-		.search-box {
+		.selected-menu{
 			border-top: 1px solid #ccc;
+			
+			.search-box {
 			padding-top: 15px;
 			.button {
 				border-bottom-left-radius: 100px;
@@ -71,6 +73,8 @@
 				&:hover, &:focus {
 					border-color: #ccc;
 				}
+		}
+		
 			}
 		}
 		.profile-name {
