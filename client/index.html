@@ -10,19 +10,124 @@
     <script src="/assets/js/app.js"></script>
   </head>
   <body>
-    <div class="grid-frame vertical">
-      <div class="grid-content shrink" style="padding: 0;">
-        <ul class="primary condense menu-bar">
-          <li><a><strong>Foundation for Apps</strong></a></li>
-          <li><a ui-sref="prototype/index">Home</a></li>
-          <li><a ui-sref="home">About</a></li>
-          <li><a ui-sref="home">News</a></li>
-          <li><a ui-sref="home">Contact</a></li>
-        </ul>
+    <div class="page-container">
+      <div class="header-content">
+        <div class="menu-group">
+          <div class="menu-group-left">
+            <h1><a href="#">TripleCurve</a></h1>
+          </div>
+          <div class="menu-group-right">
+            <div zf-action-sheet="">
+              <div zf-as-button="" title="Profile name"></div>
+              <div zf-as-content="" position="bottom">
+                <ul>
+                  <li><a href="#">Profile</a></li>
+                  <li><a href="#">Account</a></li>
+                  <li><a href="#">Settings</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="menu-group" ng-controller="menuGroup">
+          <div class="menu-group-left">
+            <ul class="menu-bar">
+              <li zf-action-sheet="" ng-repeat="menu_item in menuGroupLeft">
+                <a zf-as-button="" title="{{ menu_item.title }}" href="{{ menu_item.href }}"></a>
+                <div zf-as-content="" position="bottom">
+                  <ul>
+                    <li ng-repeat="sub_menu in menu_item.sub_menu">
+                      <a href="" title="">{{ sub_menu.title }}</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="menu-group-right">
+            <ul class="menu-bar">
+              <li><a href="#">Listings</a></li>
+              <li><a href="#">Photos</a></li>
+              <li><a href="#"><img zf-iconic="" icon="thumb" size="small"/></a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="align-right grid-block search-box">
+          <form>
+            <div class="small-12 medium-12 grid-content">
+              <span class="inline-label">
+              <a href="#" class="button"><img zf-iconic="" icon="Magnifying-glass" class="iconic-color-dark" size="small"/></a>
+              <input type="search" placeholder="Search">
+              </span>
+            </div>
+          </form>
+        </div>
       </div>
-      <div class="grid-content">
-        <div class="grid-container">
-          <div ng-class="['ui-animation']" ui-view></div>
+
+      <div class="grid-frame vertical">
+        <div class="title-bar">
+          <div class="title">Projects / All Projects</div>
+        </div>
+
+        <div class="grid-block">
+          <div  id="sidebar" class="grid-block medium-2 small-up-1">
+              <div class="grid-block">
+                <div class="grid-content">
+                  <select name="" id="">
+                    <option value="">Breakfast</option>
+                    <option value="">Bacon Pancakes</option>
+                    <option value="">Mountain Dew</option>
+                    <option value="">Scrambled eggs with grilled zucchini, spinach, leeks, roasted tomatoes and mozzarella</option>
+                  </select>
+                </div>
+              </div>
+              <div class="grid-block"></div>
+              <div class="grid-block"></div>
+              <div class="grid-block"></div>
+              <div class="grid-block"></div>
+          </div>
+          <div  id="main" class="grid-block">
+            <div class="grid-block small-up-1">
+              <div class="grid-content">
+                <div class="title">Projects / All Projects</div>
+              </div>
+              <div class="grid-block small-up-9">
+                <div class="grid-block">
+                  <div class="grid-content">
+                   <input id="checkbox1" type="checkbox"><label for="checkbox1"></label>
+                   <label>shahzeen</label>
+                  </div>
+                </div>
+                <div class="grid-block">
+                  <div class="grid-content">
+                  </div>
+                </div>
+                <div class="grid-block">
+                  <div class="grid-content">
+                  </div>
+                </div>
+                <div class="grid-block">
+                  <div class="grid-content">
+                  </div>
+                </div>
+                <div class="grid-block">
+                  <div class="grid-content">
+                  </div>
+                </div>
+                <div class="grid-block">
+                  <div class="grid-content">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="grid-content">
+          <div class="grid-container">
+            <div ng-class="['ui-animation']" ui-view></div>
+          </div>
         </div>
       </div>
     </div>
