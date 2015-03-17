@@ -1,5 +1,6 @@
 .page-container {
 	.header-content {
+	border-bottom: 1px solid #ccc; 
 		h1 {
 			font-size:1.143rem;
 			font-weight: 500;
@@ -54,8 +55,9 @@
 				}
 			}
 		}
-		.search-box {
-			border-top: 1px solid #ccc;
+		.selected-menu{
+			border-top: 1px solid #ccc;			
+			.search-box {
 			padding-top: 15px;
 			.button {
 				border-bottom-left-radius: 100px;
@@ -72,6 +74,8 @@
 				&:hover, &:focus {
 					border-color: #ccc;
 				}
+		}
+		
 			}
 		}
 		.profile-name {
