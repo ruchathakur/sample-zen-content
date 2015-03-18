@@ -18,5 +18,20 @@
 		.grid-content {
 			padding: 0;
 		}
+		.button {
+			width: 100%;
+			&.last {
+				margin-right: 0; 
+			}
+		}
+	}
+	.login-wrap {
+		h2 {
+			text-align: center;
+			font-size: 1.75rem;
+		}			
+		input[type="checkbox"] + label {
+			vertical-align: text-top;
+		}
 	}
 }
