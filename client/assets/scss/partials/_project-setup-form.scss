@@ -7,14 +7,14 @@
 	}
 
 	.left-container{
-		border-right:1px solid gray;
+		
 
 		>.grid-content{
 			padding: 0;
 		}
 	}
 	.right-container{
-		padding: 0;
+		border-left:1px solid gray;
 			.selected-menu-head{
 				padding:7px;
 				background: #e5d5bb;
@@ -27,7 +27,11 @@
 					}
 				}
 
+				.wrap-setup-form{
+					padding: 5px 0;
+				}
 	}
+
 
 	.badge{
 		color: #6baabf;

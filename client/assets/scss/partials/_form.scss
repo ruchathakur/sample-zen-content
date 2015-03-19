@@ -1,48 +1,40 @@
 
-				form{
+form{
+	select{
 
-					label{
-					font-weight: 600;					
-					padding-top: 5px;
-					}
+	}
 
-					hr{
-					margin:0;
-					}
+	label{
+		font-weight: 600;
+	}
 
-					>div{
-					padding: 0;
-					}
+	label.head{
+		font-size: 16px;
+		font-weight: 300;
+		text-transform: capitalize;
+	}
 
-				label.head{
-					font-size: 16px;
-					font-weight: 400;
-				}
-				>.grid-block{
-					padding: 10px;
-					}
-				>.grid-block{
+	label{
+		font-weight: 400;
+	}
 
-				.grid-content{
-					padding:5px;
+	[type="text"], input[type="password"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="month"], input[type="week"], input[type="email"], input[type="number"], input[type="search"], input[type="tel"], input[type="time"], input[type="url"], input[type="color"], textarea, select{
 
-					[type="text"], input[type="password"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="month"], input[type="week"], input[type="email"], input[type="number"], input[type="search"], input[type="tel"], input[type="time"], input[type="url"], input[type="color"], textarea, select{
+		border-radius: 4px;
+	}
 
-					border-radius: 4px;
-					margin:0;
-					}
-				}
-					.multi-fields{
-					  margin: 0;
-					  >.grid-block{
-					  	margin: 0;
+	hr{
+		margin-top:0;
+	}
 
+	.multi-fields{
+		padding:10px 10px 0 10px;
 
-					  		.grid-content:first-child{
-					  			padding-left:0;
-					  		}
+		>.grid-content{
+			.grid-content{
+				padding: 0 5px;
+			}
+		}
+	}
 
-					  }
-				}
-				}
-				}
+}
