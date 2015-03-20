@@ -44,18 +44,26 @@
 			font-size: 0.875rem;
 		}
 	}
-	.fail-alert {
-		form {
-			input {
-				border: 1px solid #ab3933;
+	.alert-message-wrap {
+		.card-section {
+			>p {
+				color: #fff;
+				margin: -15px -15px 15px;
+				font-size: 14px;
+				padding: 10px;
+			}
+			form {
+				input {
+					border: 1px solid #ab3933;
+				}
 			}
 		}
 	}
 	.alert-message {
 		background: #ab3933;
-		color: #fff;
-		margin: -15px -15px 0;
-		font-size: 14px;
-		padding: 10px;
+		
+	}
+	.success-message {
+		background: #008f00;
 	}
 }
