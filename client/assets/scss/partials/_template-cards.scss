@@ -18,20 +18,52 @@
 		.grid-content {
 			padding: 0;
 		}
-		.button {
-			width: 100%;
-			&.last {
-				margin-right: 0; 
+		.medium-horizontal {
+			.button {
+				width: 100%;
+				&.last {
+					margin-right: 0; 
+				}
 			}
 		}
 	}
 	.login-wrap {
+		width: 100%;
+		max-width: 24rem;
 		h2 {
-			text-align: center;
 			font-size: 1.75rem;
 		}			
 		input[type="checkbox"] + label {
-			vertical-align: text-top;
+			vertical-align: middle;
+			font-size: 0.875rem;
 		}
+		.grid-block {
+			padding: 0 0 0.9375rem;
+		}
+		a {
+			font-size: 0.875rem;
+		}
+	}
+	.alert-message-wrap {
+		.card-section {
+			>p {
+				color: #fff;
+				margin: -0.9375rem -0.9375rem 0.9375rem;
+				font-size: 0.875rem;
+				padding: 0.625rem;
+			}
+			form {
+				input {
+					border: 1px solid #ab3933;
+				}
+			}
+		}
+	}
+	.alert-message {
+		background: #ab3933;
+		
+	}
+	.success-message {
+		background: #008f00;
 	}
 }
