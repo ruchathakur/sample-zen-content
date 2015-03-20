@@ -1,4 +1,4 @@
-#setup-container{
+.setup-container{
 	background: #fce9ce;
 	.cancel{
 		padding: 10px 45px;
@@ -15,21 +15,22 @@
 	}
 	.right-container{
 		border-left:1px solid gray;
-			.selected-menu-head{
-				padding:7px;
-				background: #e5d5bb;
-				text-transform: uppercase;
-				font-weight: bold;
-				font-size: 12px;
+		.bar{
+			padding:7px;
+			background: #e5d5bb;
+			text-transform: uppercase;
+			font-weight: bold;
+			font-size: 12px;
 
 			.badge{		
-					margin-right: 10px;
-					}
-				}
+				margin-right: 10px;
+			}
+		}
 
-				.wrap-setup-form{
-					padding: 5px 0;
-				}
+		.wrap-setup-form{
+			padding: 5px 0;
+		}
+	
 	}
 
 
@@ -40,20 +41,20 @@
 	}
 
 	ul{
-	list-style-type: none;
-	margin:0;
+		list-style-type: none;
+		margin:0;
 
-	li{
-	padding:5px 27px;
+		li{
+			padding:5px 27px;
 
-	a{
-	color: #564f44;
-	text-transform: capitalize;
-	}
-	}
+			a{
+				color: #564f44;
+				text-transform: capitalize;
+			}
+		}
 
-	:hover{
-		background: #d4d8d1;
-	}
+		:hover{
+			background: #d4d8d1;
+		}
 	}
 }

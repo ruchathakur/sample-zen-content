@@ -3,7 +3,7 @@
 @import "typography";
 
 .page-container {
-	max-width: 1200px;
+	max-width: 75rem;
 	margin: 0 auto;
 	border: 1px solid gray;
 	/*@include create-text(#5a5a5a,18px,400,left);*/
@@ -17,7 +17,7 @@
 	border: 1px solid black;
 	background-color: #eeeeee;
 	.grid-block {
-		@include create-text(#5a5a5a,14px,300,left);
+		@include create-text(#5a5a5a,0.875rem,300,left);
 	}
 	.grid-block:nth-child(1)>.grid-content:nth-child(1) {
 		background: #d6d6d6;
@@ -31,3 +31,6 @@
 		vertical-align:bottom;
 	}
 }
+
+$rembase: 16;
+
