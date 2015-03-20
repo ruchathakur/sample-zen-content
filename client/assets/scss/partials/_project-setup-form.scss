@@ -1,9 +1,10 @@
 .setup-container{
 	background: #fce9ce;
+	
 	.cancel{
-		padding: 10px 45px;
+		padding: 0.625rem 2.8125rem;
 		border-radius: 2px;
-		margin: 27px 27px 10px 27px;
+		margin: 1.6875rem 1.6875rem 0.625rem 1.6875rem;
 	}
 
 	.left-container{
@@ -16,27 +17,27 @@
 	.right-container{
 		border-left:1px solid gray;
 		.bar{
-			padding:7px;
+			padding: 0.4375rem;
 			background: #e5d5bb;
 			text-transform: uppercase;
 			font-weight: bold;
-			font-size: 12px;
+			font-size: 0.75rem;
 
 			.badge{		
-				margin-right: 10px;
+				margin-right: 0.625rem;
 			}
 		}
 
 		.wrap-setup-form{
-			padding: 5px 0;
+			padding: 0.3125rem 0;
 		}
-	
+
 	}
 
 
 	.badge{
 		color: #6baabf;
-		margin-right: 5px;
+		margin-right: 0.3125rem;
 		border: 1px solid #efe0c6;
 	}
 
@@ -45,7 +46,7 @@
 		margin:0;
 
 		li{
-			padding:5px 27px;
+			padding: 0.3125rem 1.6875rem;
 
 			a{
 				color: #564f44;
