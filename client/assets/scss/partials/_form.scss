@@ -1,8 +1,17 @@
+input[disabled], input[disabled]:hover, textarea[disabled]{
+	background: #e3e3e3;
+	border: 1px solid #ccc;
+}
+
+*::-webkit-input-placeholder {
+	color: #333;
+}
 
 form{
 
 	label{
 		font-weight: 600;
+		margin-top: 0.375rem;
 	}
 
 	label.head{
@@ -16,8 +25,9 @@ form{
 	}
 
 	[type="text"], input[type="password"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="month"], input[type="week"], input[type="email"], input[type="number"], input[type="search"], input[type="tel"], input[type="time"], input[type="url"], input[type="color"], textarea, select{
-
+		color: #333333;
 		border-radius: 4px;
+		font-size: 0.9rem;
 	}
 
 	hr{
@@ -25,6 +35,9 @@ form{
 	}
 	.button-container{
 		padding: 0.4375rem 0 !important;
+		a.button{
+			font-size: 0.9rem;
+		}
 
 		.text-right{
 
@@ -43,6 +56,7 @@ form{
 			border-bottom-right-radius: 1.25rem;
 			font-weight: normal;
 			color: #3f9add;
+			text-transform: capitalize;
 		}
 
 		.button.disabled{
