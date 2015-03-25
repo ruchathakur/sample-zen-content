@@ -31,10 +31,18 @@
 		.wrap-setup-form{
 			padding: 0.3125rem 0;
 		}
-		li{
-			padding: 0;
-		}
+		ul{
+			li{
+				margin-right: 7px;
+				padding: 0;
+				float: left;
+				&:hover{
+					background: none;
+				}
 
+			}
+
+		}
 	}
 
 
@@ -55,10 +63,12 @@
 				color: #564f44;
 				text-transform: capitalize;
 			}
+
+			&:hover{
+				background: #d4d8d1;
+			}
 		}
 
-		:hover{
-			background: #d4d8d1;
-		}
+		
 	}
 }
