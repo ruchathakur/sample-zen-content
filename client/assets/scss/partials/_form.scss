@@ -1,0 +1,66 @@
+
+form{
+
+	label{
+		font-weight: 600;
+	}
+
+	label.head{
+		font-size: 1rem;
+		font-weight: 300;
+		text-transform: capitalize;
+	}
+
+	label{
+		font-weight: 400;
+	}
+
+	[type="text"], input[type="password"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="month"], input[type="week"], input[type="email"], input[type="number"], input[type="search"], input[type="tel"], input[type="time"], input[type="url"], input[type="color"], textarea, select{
+
+		border-radius: 4px;
+	}
+
+	hr{
+		margin-top:0;
+	}
+	.button-container{
+		padding: 0.4375rem 0 !important;
+
+		.text-right{
+
+			a.button:last-child{
+				margin:0;
+				margin-left: 0.9375rem;
+			}
+
+		}
+
+		.button{
+			margin:0;
+			border-top-left-radius: 1.25rem;
+			border-top-right-radius: 1.25rem;
+			border-bottom-left-radius: 1.25rem;
+			border-bottom-right-radius: 1.25rem;
+			font-weight: normal;
+			color: #3f9add;
+		}
+
+		.button.disabled{
+			color: #a99e8a;
+		}
+
+	}
+
+
+
+	.multi-fields{
+		padding:0.625rem 0.625rem 0 0.625rem;
+
+		>.grid-content{
+			.grid-content{
+				padding: 0 0.3125rem;
+			}
+		}
+	}
+
+}
