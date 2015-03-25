@@ -1,9 +1,14 @@
-#setup-container{
-	background: #fce9ce;
+.setup-container{
+	background: #eeeeee;
+	
 	.cancel{
-		padding: 10px 45px;
+		padding: 0.625rem 2.8125rem;
 		border-radius: 2px;
-		margin: 27px 27px 10px 27px;
+		margin: 1.6875rem 1.6875rem 0.625rem 1.6875rem;
+	}
+
+	button.dark{
+		background-color: #424242;
 	}
 
 	.left-container{
@@ -15,45 +20,60 @@
 	}
 	.right-container{
 		border-left:1px solid gray;
-			.selected-menu-head{
-				padding:7px;
-				background: #e5d5bb;
-				text-transform: uppercase;
-				font-weight: bold;
-				font-size: 12px;
+		.bar{
+			padding: 0.4375rem;
+			background: #d6d6d6;
+			text-transform: uppercase;
+			font-weight: bold;
+			font-size: 0.75rem;
 
 			.badge{		
-					margin-right: 10px;
-					}
+				margin-right: 0.625rem;
+			}
+		}
+
+		.wrap-setup-form{
+			padding: 0.3125rem 0;
+		}
+		ul{
+			li{
+				margin-right: 7px;
+				padding: 0;
+				float: left;
+				&:hover{
+					background: none;
 				}
 
-				.wrap-setup-form{
-					padding: 5px 0;
-				}
+			}
+
+		}
 	}
 
 
 	.badge{
 		color: #6baabf;
-		margin-right: 5px;
-		border: 1px solid #efe0c6;
+		margin-right: 0.3125rem;
+		border: 1px solid #e3e3e3;
 	}
 
 	ul{
-	list-style-type: none;
-	margin:0;
+		list-style-type: none;
+		margin:0;
 
-	li{
-	padding:5px 27px;
+		li{
+			padding: 0.3125rem 1.6875rem;
 
-	a{
-	color: #564f44;
-	text-transform: capitalize;
-	}
-	}
+			a{
+				color: #333333;
+				text-transform: capitalize;
+				font-size: 0.9rem;
+			}
 
-	:hover{
-		background: #d4d8d1;
-	}
+			&:hover{
+				background: #bcdaef;
+			}
+		}
+
+		
 	}
 }
