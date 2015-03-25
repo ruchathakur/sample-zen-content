@@ -38,7 +38,6 @@
         title: 'Dashboard', 
         href:'#',
         sub_menu: [
-          { title: 'home', href: '#' }
         ]
       },
       { 
