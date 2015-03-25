@@ -44,7 +44,7 @@
         title: 'Projects', 
         href:'#',
         sub_menu: [
-          { title: 'All projects', href: '#' },
+          { title: 'Project setup', href: 'project_setup' },
           { title: 'My projects', href: '#' }
         ]
       },
