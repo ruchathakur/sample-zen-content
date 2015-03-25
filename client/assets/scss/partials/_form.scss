@@ -1,0 +1,40 @@
+
+form{
+	select{
+
+	}
+
+	label{
+		font-weight: 600;
+	}
+
+	label.head{
+		font-size: 16px;
+		font-weight: 300;
+		text-transform: capitalize;
+	}
+
+	label{
+		font-weight: 400;
+	}
+
+	[type="text"], input[type="password"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="month"], input[type="week"], input[type="email"], input[type="number"], input[type="search"], input[type="tel"], input[type="time"], input[type="url"], input[type="color"], textarea, select{
+
+		border-radius: 4px;
+	}
+
+	hr{
+		margin-top:0;
+	}
+
+	.multi-fields{
+		padding:10px 10px 0 10px;
+
+		>.grid-content{
+			.grid-content{
+				padding: 0 5px;
+			}
+		}
+	}
+
+}
