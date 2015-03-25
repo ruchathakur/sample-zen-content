@@ -1,10 +1,14 @@
 .setup-container{
-	background: #fce9ce;
+	background: #eeeeee;
 	
 	.cancel{
 		padding: 0.625rem 2.8125rem;
 		border-radius: 2px;
 		margin: 1.6875rem 1.6875rem 0.625rem 1.6875rem;
+	}
+
+	button.dark{
+		background-color: #424242;
 	}
 
 	.left-container{
@@ -18,7 +22,7 @@
 		border-left:1px solid gray;
 		.bar{
 			padding: 0.4375rem;
-			background: #e5d5bb;
+			background: #d6d6d6;
 			text-transform: uppercase;
 			font-weight: bold;
 			font-size: 0.75rem;
@@ -49,7 +53,7 @@
 	.badge{
 		color: #6baabf;
 		margin-right: 0.3125rem;
-		border: 1px solid #efe0c6;
+		border: 1px solid #e3e3e3;
 	}
 
 	ul{
@@ -60,12 +64,13 @@
 			padding: 0.3125rem 1.6875rem;
 
 			a{
-				color: #564f44;
+				color: #333333;
 				text-transform: capitalize;
+				font-size: 0.9rem;
 			}
 
 			&:hover{
-				background: #d4d8d1;
+				background: #bcdaef;
 			}
 		}
 
