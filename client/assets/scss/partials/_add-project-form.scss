@@ -1,4 +1,4 @@
-.setup-container{
+.project-form-container{
 	background: #eeeeee;
 	
 	.cancel{
@@ -77,8 +77,14 @@
 			&:hover{
 				background: #bcdaef;
 			}
+		}	
+	}
+	.editorial-workflow {
+		select {
+  			margin: 0;
 		}
-
-		
+		input {
+			margin: 0;
+		}
 	}
 }
