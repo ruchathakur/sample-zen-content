@@ -4,7 +4,9 @@
   angular.module('application', [
     'ui.router',
     'ngAnimate',
-
+    'ngSanitize',    
+    'ui.select',
+    'datePicker',
     //foundation
     'foundation',
     'foundation.dynamicRouting',
@@ -12,12 +14,13 @@
   ])
     .config(config)
     .run(run)
-    .controller('menuGroup', menuGroup);
+    .controller('menuGroup', menuGroup)
+    .controller('selectbox', selectbox);
   ;
 
   config.$inject = ['$urlRouterProvider', '$locationProvider'];
 
-  function config($urlProvider, $locationProvider) {
+  function config($urlProvider, $locationProvider, uiSelectConfig) {
     $urlProvider.otherwise('/');
 
     $locationProvider.html5Mode({
@@ -26,50 +29,12 @@
     });
 
     $locationProvider.hashPrefix('!');
+
+    // uiSelectConfig.theme = 'select2';
   }
 
   function run() {
     FastClick.attach(document.body);
-  }
-
-  function menuGroup($scope){
-    $scope.menuGroupLeft = [
-      { 
-        title: 'Dashboard', 
-        href:'#',
-        sub_menu: [
-        ]
-      },
-      { 
-        title: 'Projects', 
-        href:'#',
-        sub_menu: [
-          { title: 'Project setup', href: 'project_setup' },
-          { title: 'My projects', href: '#' }
-        ]
-      },
-      { 
-        title: 'Reports', 
-        href:'#',
-        sub_menu: [
-          { title: 'Dashboard', href: '#' }
-        ]
-      },
-      { 
-        title: 'Contacts', 
-        href:'#',
-        sub_menu: [
-          { title: 'Dashboard', href: '#' }
-        ]
-      },
-      { 
-        title: 'Settings',
-        href:'#',
-        sub_menu: [
-          { title: 'Dashboard', href: '#' }
-        ]
-      }
-    ];
-  }
+  }    
 
 })();

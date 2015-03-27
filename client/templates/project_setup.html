@@ -45,13 +45,13 @@ url: /project_setup
                                     <div class="grid-content large-4">
                                         <label>Project manager</label>
                                     </div>
-                                    <div class="grid-content large-8">
-                                        <select name="" id="">
-                                            <option value="">Breakfast</option>
-                                            <option value="">Bacon Pancakes</option>
-                                            <option value="">Mountain Dew</option>
-                                            <option value="">Scrambled eggs with grilled zucchini, spinach, leeks, roasted tomatoes and mozzarella</option>
-                                        </select>
+                                    <div class="grid-content large-8" ng-controller="selectbox">
+                                        <ui-select ng-model="manager.selected" theme="selectize" ng-disabled="disabled">
+                                                <ui-select-match placeholder="Select ">{{$select.selected}}</ui-select-match>
+                                                <ui-select-choices repeat="manager in managers | filter: $select.search">
+                                                  <span ng-bind-html="manager | highlight: $select.search"></span>
+                                                </ui-select-choices>
+                                              </ui-select>
                                     </div>
                                 </div>
                             </div>
@@ -70,13 +70,14 @@ url: /project_setup
                                             <div class="grid-content large-4">
                                                 <label>Client name</label>
                                             </div>
-                                            <div class="grid-content large-5">
-                                                <select name="" id="">
-                                                    <option value="">select</option>
-                                                    <option value="">Bacon Pancakes</option>
-                                                    <option value="">Mountain Dew</option>
-                                                    <option value="">Scrambled eggs with grilled zucchini, spinach, leeks, roasted tomatoes and mozzarella</option>
-                                                </select>
+                                            <div class="grid-content large-5" ng-controller="selectbox">
+                                            	<ui-select ng-model="country.selected" theme="selectize" ng-disabled="disabled">
+                                                <ui-select-match placeholder="Select ">{{$select.selected.name}}</ui-select-match>
+                                                <ui-select-choices repeat="country in countries | filter: $select.search">
+                                                  <span ng-bind-html="country.name | highlight: $select.search"></span>
+                                                  <small ng-bind-html="country.code | highlight: $select.search"></small>
+                                                </ui-select-choices>
+                                              </ui-select>
                                             </div>
                                             <div class="grid-content large-3">
                                                 <input id="visible" type="checkbox">
@@ -145,13 +146,13 @@ url: /project_setup
                                             <div class="grid-content large-4">
                                                 <label>Account manager</label>
                                             </div>
-                                            <div class="grid-content large-8">
-                                                <select name="" id="">
-                                                    <option value="">select</option>
-                                                    <option value="">Bacon Pancakes</option>
-                                                    <option value="">Mountain Dew</option>
-                                                    <option value="">Scrambled eggs with grilled zucchini, spinach, leeks, roasted tomatoes and mozzarella</option>
-                                                </select>
+                                            <div class="grid-content large-8" ng-controller="selectbox">
+                                                <ui-select ng-model="manager.selected" theme="selectize" ng-disabled="disabled">
+                                                <ui-select-match placeholder="Select ">{{$select.selected}}</ui-select-match>
+                                                <ui-select-choices repeat="manager in managers | filter: $select.search">
+                                                  <span ng-bind-html="manager | highlight: $select.search"></span>
+                                                </ui-select-choices>
+                                              </ui-select>
                                             </div>
                                         </div>
                                     </div>
@@ -173,7 +174,7 @@ url: /project_setup
                                                 <label>Start date</label>
                                             </div>
                                             <div class="grid-content large-5">
-                                                <input type="date" placeholder="Text field">
+                                                <input type="text" date-time ng-model="start" required="true" view="hours" partial="true">
                                             </div>
                                         </div>
                                     </div>
@@ -183,7 +184,7 @@ url: /project_setup
                                                 <label>End date</label>
                                             </div>
                                             <div class="grid-content large-8">
-                                                <input type="date" placeholder="Text field">
+                                                <input ui-date>
                                             </div>
                                         </div>
                                     </div>
