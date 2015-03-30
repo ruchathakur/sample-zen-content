@@ -25,6 +25,11 @@ form{
 		font-weight: 400;
 	}
 
+	input[type="checkbox"] + label, input[type="radio"] + label {		
+		margin-top: 0;
+		vertical-align: top;
+	}
+
 	[type="text"], input[type="password"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="month"], input[type="week"], input[type="email"], input[type="number"], input[type="search"], input[type="tel"], input[type="time"], input[type="url"], input[type="color"], textarea, select{
 		color: #333333;
 		border-radius: 4px;
@@ -42,7 +47,7 @@ form{
 	}
 
 	hr{
-		margin-top:0;
+		margin-top:1rem;
 		margin-bottom:1rem;
 	}
 	.button-container{
