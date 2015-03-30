@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang="en" ng-app="application">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Project Setup</title>
+  <link href="../assets/css/app.css" rel="stylesheet" type="text/css">
+  <script src="../assets/js/foundation.js"></script>
+  <script src="../assets/js/routes.js"></script>
+  <script src="../assets/js/app.js"></script>
+</head>
+<body>
+  <div class="page-container">
+    <div class="grid-block project-form-container">
+      <div class="grid-content shrink">
+        <div class="grid-block left-container">
+          <div class="grid-content">
+           <a class="dark button cancel" href="#">Cancel</a>
+            <ul>
+              <li><a href="#"><span class="secondary badge">&#10004;</span>Setup</a></li>
+              <li><a href="#"><span class="secondary badge">2</span>Editorial Staff</a></li>
+              <li><a href="#"><span class="secondary badge">3</span>Client Inputs</a></li>
+              <li><a href="#"><span class="secondary badge">4</span>Content</a></li>
+              <li><a href="#"><span class="secondary badge">5</span>Summary</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid-block right-container">
+        <div class="grid-content">
+          <div class="grid-block">
+            <ul class="grid-content bar">
+              <li>
+               <span class="secondary badge">&#10004;</span><span class="added">Setup</span>
+             </li>
+             <li>
+               <span class="secondary badge">2</span><span>Editorial Staff</span>
+             </li>
+           </ul>
+          </div>
+          <div class="grid-block wrap-setup-form">
+            <div class="grid-content">
+              <form>
+                <div class="grid-block multi-fields">
+                  <div class="grid-content large-6">
+                    <div class="grid-block">
+                      <div class="grid-content large-4">
+                        <label>Project ID</label>
+                      </div>
+                      <div class="grid-content large-5">
+                        <input type="text" placeholder="000000" disabled>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="grid-content large-6">
+                    <div class="grid-block">
+                      <div class="grid-content large-4">
+                        <label>Project manager</label>
+                      </div>
+                      <div class="grid-content large-8">
+                        <input type="text" placeholder="Jane Simpson" disabled>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="grid-block">
+                  <div class="grid-content">
+                    <div class="grid-block multi-fields">
+                      <div class="grid-content large-6">
+                        <div class="grid-block">
+                          <div class="grid-content large-4">
+                            <label>Client name</label>
+                          </div>
+                          <div class="grid-content large-5">
+                            <input type="text" placeholder="Ask.com" disabled>
+                          </div>
+                          <div class="grid-content large-4">
+                            <label>Project codename</label>
+                          </div>
+                          <div class="grid-content large-5">
+                            <input type="text" placeholder="Marzipan" disabled>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="grid-content large-6">
+                        <div class="grid-block">
+                          <div class="grid-content large-4">
+                            <label>Project description</label>
+                          </div>
+                          <div class="grid-content large-8">
+                            <textarea rows="10" placeholder="Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies." disabled></textarea>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div> 
+
+                <hr/>
+
+                <div class="grid-block">
+                  <div class="grid-content editorial-workflow">
+                    <div class="grid-block">
+                      <div class="grid-content large-3">
+                        <h5>Workflow & Compensation</h5>
+                      </div>
+                      <div class="grid-content large-3">
+                        <input id="visible" type="checkbox"><label for="checkbox1">Use client defaults</label>
+                      </div>
+                    </div>
+
+                    <div class="grid-block">
+                      <div class="grid-content">
+                        <h6>Editorial workflow</h6>
+                      </div>
+                    </div>
+
+                    <div class="grid-block">
+                      <div class="grid-content">              
+                        <table>
+                          <thead>
+                            <tr>
+                              <th>#</th>
+                              <th>Skill</th>
+                              <th>Compensation</th>
+                              <th>Min. quality</th>
+                              <th>Task time</th>
+                              <th>&nbsp;</th>
+                              <th>&nbsp;</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>1</td>
+                              <td>
+                                <select name="" id="">
+                                  <option value="">Writer</option>
+                                  <option value="">Editor</option>
+                                  <option value="">Review</option>
+                                </select>
+                              </td>
+                              <td>
+                                <span><input type="text" placeholder="Max $"></span>
+                                <span>/</span>
+                                <span>
+                                  <select name="" id="">
+                                    <option value="">Task</option>
+                                    <option value="">Word</option>
+                                  </select>
+                                </span>
+                              </td>
+                              <td>
+                                <select name="" id="">
+                                  <option value="">0</option>
+                                  <option value="">1</option>
+                                  <option value="">2</option>
+                                  <option value="">3</option>
+                                </select>
+                              </td>
+                              <td>
+                                <span><input type="text" placeholder="0"></span>
+                                <span>
+                                  <select name="" id="">
+                                    <option value="">Min(s)</option>
+                                    <option value="">Hour(s)</option>
+                                    <option value="">Day(s)</option>
+                                    <option value="">Week(s)</option>
+                                  </select>
+                                </span>
+                              </td>
+                              <td>
+                                <span>&nbsp;</span>
+                              </td>
+                              <td>
+                                <span>&nbsp;</span>
+                              </td>                  
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div> 
+
+                <hr/>
+
+                <div class="grid-block">
+                  <div class="grid-content staffing-model-wrap">
+                    <div class="grid-block">
+                      <div class="grid-content">
+                        <h5>Staffing</h5>
+                      </div>
+                    </div>
+                    <div class="grid-block">
+                      <div class="grid-content large-6">
+                        <div class="grid-block">
+                          <div class="grid-content large-4">
+                            <label>Staffing model*</label>
+                          </div>
+                          <div class="grid-content large-5">
+                            <select name="" id="">
+                              <option value="">Assign to skill</option>
+                              <option value="">Assign to project</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="grid-block">
+                      <div class="grid-content">
+                        <table>
+                          <thead>
+                            <tr>
+                              <th>Workflow</th>
+                              <th>Assignee(s)</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>
+                                <span class="flow-box writer">w</span>
+                                <span>&#62;</span>
+                                <span class="flow-box editor">e</span>
+                                <span>&#62;</span>
+                                <span class="flow-box reviewer">r</span>
+                                <span>&#62;</span>
+                                <span class="flow-box content">c</span>
+                              </td>
+                              <td><input type="text" placeholder="Type to select" class="spread"></td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                    <div class="grid-block">
+                      <div class="grid-content">
+                        <p class="small">* Add/order staff as specified by the Client’s specified requirements for this project.</p>
+                      </div>
+                    </div>
+                  </div> 
+                </div>
+              </form>
+            </div>
+          </div>
+          <form>
+            <div class="grid-block bar button-container">
+              <div class="grid-content large-6">
+                <a class="secondary button disabled" href="#">Cancel</a>
+              </div>
+              <div class="grid-content large-6 text-right">
+               <a class="secondary button disabled" href="#">< Back</a>
+               <a class="secondary button" href="#">next ></a>
+             </div>
+           </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>

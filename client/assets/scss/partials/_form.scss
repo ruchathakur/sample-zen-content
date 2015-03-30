@@ -1,0 +1,102 @@
+input[disabled], input[disabled]:hover, textarea[disabled]{
+	background: #e3e3e3;
+	border: 1px solid #ccc;
+}
+
+*::-webkit-input-placeholder {
+	color: #333;
+}
+
+form{
+
+	label{
+		font-weight: 600;
+		margin-top: 0.375rem;
+		text-transform: capitalize;
+	}
+
+	h5{
+		font-size: 1rem;
+		font-weight: 300;
+		text-transform: capitalize;
+	}
+
+	label{
+		font-weight: 400;
+	}
+
+	input[type="checkbox"] + label, input[type="radio"] + label {		
+		margin-top: 0;
+		vertical-align: top;
+	}
+
+	[type="text"], input[type="password"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="month"], input[type="week"], input[type="email"], input[type="number"], input[type="search"], input[type="tel"], input[type="time"], input[type="url"], input[type="color"], textarea, select{
+		color: #333333;
+		border-radius: 4px;
+		font-size: 0.9rem;
+		max-width: 9.1875rem;
+		display: inline-block;
+	}
+
+	.spread{
+		max-width: 100%;
+	}
+
+	textarea{
+		max-width: 100%;
+	}
+
+	hr{
+		margin-top:1rem;
+		margin-bottom:1rem;
+	}
+	.button-container{
+		padding: 0.4375rem 0 !important;
+		a.button{
+			font-size: 0.9rem;
+		}
+
+		.text-right{
+
+			a.button:last-child{
+				margin:0;
+				margin-left: 0.9375rem;
+			}
+
+		}
+
+		.button{
+			margin:0;
+			border-top-left-radius: 1.25rem;
+			border-top-right-radius: 1.25rem;
+			border-bottom-left-radius: 1.25rem;
+			border-bottom-right-radius: 1.25rem;
+			font-weight: normal;
+			color: #3f9add;
+			text-transform: capitalize;
+		}
+
+		.button.disabled{
+			color: #a99e8a;
+		}
+
+	}
+
+
+
+	.multi-fields{
+		>.grid-content{
+			.grid-content{
+				padding-right: 0;
+
+				&:last-child{
+					padding-right: 1rem;
+				}
+			}
+		}
+	}
+	.multi-fields.top{
+		padding-top: 0;
+	}
+
+}
